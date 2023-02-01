@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Analysis</title>
+    <style>
+        /* @media screen and (max-width: 1130px){
+            
+        }
+
+        @media screen and (max-width: 950px) {
+            
+        } */
+
+        @media screen and (max-width: 862px) {
+            .profile {
+                margin-left: 20px;
+            }
+        }
+
+        @media screen and (max-width: 810px) {
+            .fourColumns {
+                display: grid;
+                grid-template-columns: auto;
+                row-gap: 10px;
+            }
+        }
+
+        @media screen and (max-width: 775px) {
+            .analysisBody {
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 670px) {
+            .profileName {
+                display: none;
+            }
+
+            .headerEnd {
+                display: none;
+                /* margin-left: 15px;
+                width: fit-content; */
+            }
+
+            .header {
+                grid-template-columns: auto auto;
+                padding-right: 10px;
+            }
+
+            .notifiLink {
+                display: block;
+            }
+
+            .profileLink {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 476px) {}
+
+        @media screen and (max-width: 465px) {
+            .sideNavSSS {
+                width: -webkit-fill-available;
+            }
+
+            .headerStart {
+                margin-right: 10px;
+            }
+
+            .logoIcon {
+                margin-left: 10px;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            .col {
+                margin-bottom: 10px;
+                flex: 1 0 100%;
+            }
+        }
+
+        @media screen and (max-width: 370px) {
+            .logoIcon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="headerBar">
+            
+        <div class="headerStart">
+            <img class="menuIcon" src="images/menu-bar.svg" id="menuBtn" onclick="showMenu()">
+            <img class="logoIcon" src="images/header-logo.svg">
+        </div>
+
+        <div class="headerSearch">
+            <img class="searchIcon" src="images/search-icon.svg">
+            <input type="search" class="form-control rounded" placeholder="Search"/>
+        </div>
+
+        <div class="headerEnd">
+            
+                <img class="notificationIcon" src="images/notification-icon.svg">
+                <img class="profile" src="images/profile.png">
+                <p class="profileName">John Doe</p>
+                <img class="downArrow" src="images/downward-arrow.svg">
+    
+        </div>
+
+    </div>
+
+    <div class="analysis">
+
+        <div class="sideNav" id="sideNavMenu">
+
+            <!-- <img class="logoIcon img-fluid" src="images/header-logo.svg"> -->
+            
+            <a href="./dashboard.html">
+                <div class="dashboardLink" id="dashboardBtn">
+                        <div class="dashboardIcon"><img src="images/dashboard-default.svg"></div>
+                        <p>Dashboard</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="analysisLink">
+                    <img class="analysisIcon" src="images/graph-default.svg">
+                    <p>Analysis</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="inboxLink">
+                    <img class="inboxIcon" src="images/inbox-default.svg">
+                    <p>Inbox</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="historyLink">
+                    <img class="historyIcon" src="images/clock-default.svg">
+                    <p>History</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="usersLink">
+                    <img class="usersIcon" src="images/user-default.svg">
+                    <p>Users</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="maintenanceLink">
+                    <img class="maintenanceIcon" src="images/maintenance-default.svg">
+                    <p>Maintenance</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="settingLink">
+                    <img class="settingIcon" src="images/setting-default.svg">
+                    <p>Setting</p>
+                </div>
+            </a>
+
+            <a href="#" class="notifiLink">
+                <div>
+                    <img class="notifiIcon" src="images/notification-icon.svg">
+                    <p>Notification</p>
+                </div>
+            </a>
+
+            <a href="#" class="profileLink">
+                <div>
+                    <img class="profileIcon" src="images/profile.png">
+                    <p>John Doe</p>
+                    <img class="downArrow" src="images/downward-arrow.svg">
+                </div>
+            </a>
+
+        </div>
+
+        <div class="analysisBody">
+            <p class="analysisTitle">Analysis</p>
+
+            <div class="mainForm">
+                <p class="titles">One Column</p>
+
+                <div class="form-group">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+
+                    <div class="col">
+                        <select class="form-select">
+                            <option disabled selected hidden>Dropdown</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <textarea class="form-control" rows="5" placeholder="Multiple Line"></textarea>
+                    </div>
+                </div>
+
+                <p class="titles">Two Column</p>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="col">
+                            <select class="form-select">
+                                <option disabled selected hidden>Dropdown</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="titles">Three Column</p>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control focusInput shadow-none" placeholder="Focus">
+                        </div>
+                        <div class="col">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="disabled" value="johndoe" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="titles">Four Column</p>
+
+                <div class="form-group">
+                    <div class="row fourColumns">
+                        <div class="col designationBox">
+                            <input type="text" class="form-control shadow-none" placeholder="Designation"
+                                value="UI Designer">
+                            <div class="inputSmallDiv"><small>Enter valid data</small></div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <div class="inputSmallDiv"><small class="text-muted">Enter your full name as per ID</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Username" value="johndoe">
+                        </div>
+                        <div class="col">
+                            <select class="form-select">
+                                <option disabled selected hidden>Select</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="titles">Other Design Elements</p>
+
+                <p class="subTitles">File Upload</p>
+
+                <div class="fileUpload">
+                    <a href="#">
+                        <div class="uploadBtn">
+                            <img src="images/cloud-upload-icon.svg">
+                            <p>Upload</p>
+                        </div>
+                    </a>
+                    <p class="noItemText">No item Selected</p>
+                </div>
+
+                <p class="subTitles">Radio Button</p>
+
+                <div class="radioBtns">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input shadow-none" type="radio" name="radiobtn" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Option 1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input shadow-none" type="radio" name="radiobtn" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Option 2</label>
+                    </div>
+                </div>
+
+                <p class="subTitles">Checkbox</p>
+
+                <div class="checkBox">
+                    <div class="form-check-inline">
+                        <input class="form-check-input shadow-none" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Option 1</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input shadow-none" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">Option 2</label>
+                    </div>
+                </div>
+
+                <p class="subTitles">Snackbar</p>
+
+                <div class="snackBar">
+                    <div class="row snackBarRow">
+                        <div class="col errorMsg">
+                            <img src="images/error-icon.svg">
+                            <p>This is an error Message</p>
+                        </div>
+                        <div class="col infoMsg">
+                            <img src="images/info-icon.svg">
+                            <p>This is an information Message</p>
+                        </div>
+                    </div>
+                    <div class="row snackBarRow">
+                        <div class="col warnMsg">
+                            <img src="images/warning-icon.svg">
+                            <p>This is an warning Message</p>
+                        </div>
+                        <div class="col successMsg">
+                            <img src="images/success-icon.svg">
+                            <p>This is an information Message</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="subTitles">Call to action</p>
+
+                <div class="actionButtons">
+                    <div class="primaryBtn">
+                        <p>Primary</p>
+                    </div>
+                    <div class="secondaryBtn">
+                        <p>Secondary</p>
+                    </div>
+                </div>
+
+                <p class="subTitles">Tabs</p>
+
+                <div class="tabView">
+                    <a href="#">
+                        <p>Tab 1</p>
+                    </a>
+                    <a href="#">
+                        <p>Tab 2</p>
+                    </a>
+                    <a href="#">
+                        <p>Tab 3</p>
+                    </a>
+                </div>
+
+                <div class="tabContent">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const sideNavMenu = document.getElementById("sideNavMenu");
+    console.log(toString(sideNavMenu.style.display));
+
+    function showMenu() {
+        if (window.getComputedStyle(sideNavMenu).display === 'none') {
+            sideNavMenu.style.display = "block";
+            sideNavMenu.style.position = "absolute"
+            if (parseInt(window.innerWidth) <= 500) {
+                sideNavMenu.style.minHeight = "fit-content";
+                document.body.style.overflow = "hidden";
+            }
+            else {
+                sideNavMenu.style.minHeight = "100vh";
+            }
+        }
+        else {
+            sideNavMenu.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    }
+</script>
+
+</html>
