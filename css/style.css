@@ -23,7 +23,7 @@ a{
     color:black;
 }
 
-.mainContainer{
+.Container1{
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -32,7 +32,7 @@ a{
     /* justify-content: center; */
 }
 
-.mainImg{
+.heroImg{
     display: flex;
     flex: 1 1 0;
     align-items: center;
@@ -44,7 +44,7 @@ a{
     height: 576px; */
 }
 
-.mainImg img {
+.heroImg img {
     max-height: 576px;
     width: auto;
     border-radius: 50%;
@@ -81,7 +81,7 @@ a{
     color: #C8242F;
 }
 
-.loginTitle{
+.loTitle{
     font-weight: 400;
     font-size: 25px;
     color: #3E3E3E;
@@ -89,7 +89,7 @@ a{
     width: fit-content;
 }
 
-.formBody{
+.form{
     margin-top: 24px;
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@ a{
     flex-direction: column;
 } */
 
-.inputUsername{
+.username{
     width: 100%;
     height: 49px;
     border: 1px solid #ADADAD;
@@ -109,7 +109,7 @@ a{
     padding-left: 15px;
 }
 
-.inputPassword{
+.password{
     margin-top: 27px;
     width: 100%;
     height: 49px;
@@ -124,7 +124,7 @@ a{
     font-size: 15px;
 }
 
-.formFooter{
+.fFooter{
     margin-top: 31px;
     display: flex;
     flex-direction: row;
@@ -149,7 +149,7 @@ margin-top: 31px;
 align-items: center;
 }
 
-.forgotPass{
+.fPass{
     width: 100%;
     max-width: 500px;
     margin-left: 100px;
@@ -188,7 +188,7 @@ align-items: center;
     z-index: 10;
 }
 
-.headerStart{
+.headerLeft{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -208,7 +208,7 @@ align-items: center;
     width: 142px;
 }
 
-.headerSearch{
+.headerMid{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -228,7 +228,7 @@ align-items: center;
     font-weight: 400;
 }
 
-.headerEnd{
+.headerRight{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -261,14 +261,14 @@ align-items: center;
     height: 18px;
 }
 
-.dashboard{
+.mainDash{
   
     display: grid;
     position: relative;
  
 }
 
-.sideNav{
+.sideMenu{
     display: none;
     flex-direction: column;
     height: 100%;
@@ -287,12 +287,12 @@ align-items: center;
     width: fit-content;
 }
 
-.sideNav p{
+.sideMenu p{
     font-weight: 400;
     font-size: 16px;
 }
 
-.sideNav div{
+.sideMenu div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -300,14 +300,14 @@ align-items: center;
     border-radius: 5px;
 }
 
-.sideNav div img{
+.sideMenu div img{
     margin-left: 18px;
     margin-right: 13px;
     height: 20px;
     width: 20px;
 }
 
-.sideNav div:hover{
+.sideMenu div:hover{
     background-color: #FFF3F4;
     color: #C8242F;
 }
@@ -324,7 +324,7 @@ align-items: center;
     background: url("/images/dashboard-active.svg");
 }
 
-.dashboardBody{
+.dashBody{
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -335,12 +335,12 @@ align-items: center;
     z-index: 0;
 }
 
-.dashboardTitle{
+.dashTitle{
     font-size: 30px;
     font-weight: 500;
 }
 
-.dashCards{
+.infoCards{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 30px;
@@ -383,7 +383,7 @@ align-items: center;
     color: #3E3E3E;
 }
 
-.charts{
+.chart{
     display: grid;
     grid-template-columns: 65% 32.5%;
     column-gap: 30px;
@@ -415,7 +415,7 @@ align-items: center;
     color: #3E3E3E;
 }
 
-.graphTabs{
+.graphInfo{
     font-size: 12px;
     color: #ADADAD;
     display: flex;
@@ -424,7 +424,7 @@ align-items: center;
     justify-content: end;
 }
 
-.graphTabs p{
+.graphInfo p{
     margin-right: 20px;
 }
 
@@ -444,7 +444,7 @@ align-items: center;
     padding-right: 29px;
 }
 
-.pieChartHeader{
+.pieHeader{
     font-size: 22px;
     font-weight: 500;
     color: #3E3E3E;
@@ -462,17 +462,17 @@ align-items: center;
     grid-template-columns: auto auto;
 }
 
-.columns{
+.column{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.pieSubTtlColumn{
+.pieTtlColumn{
     width: fit-content;
 }
 
-.rowCountry{
+.country{
     display: flex;
     flex-direction: row;
     margin-bottom: 18px;
@@ -499,7 +499,7 @@ align-items: center;
     padding: 25px;
 }
 
-.invoiceTitle{
+.invoiceTtl{
     font-size: 22px;
     font-weight: 500;
     color: #3E3E3E;
@@ -528,7 +528,7 @@ tbody tr{
     color: #3E3E3E;
 }
 
-.statusBtnPaid{
+.btnPaid{
     display: flex;
     height: 26px;
     width: 50px;
@@ -539,7 +539,7 @@ tbody tr{
     align-items: center;
 }
 
-.statusBtnFailed{
+.btnFailed{
     display: flex;
     height: 26px;
     width: 60px;
@@ -550,7 +550,7 @@ tbody tr{
     align-items: center;
 }
 
-.statusBtnPending{
+.btnPending{
     display: flex;
     height: 26px;
     width: 75px;
@@ -596,7 +596,7 @@ tbody tr{
     padding: 30px;
 }
 
-.titles{
+.title-1{
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 15px;

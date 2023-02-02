@@ -41,7 +41,7 @@
                 display: none;
             }
 
-            .headerEnd {
+            .headerRight {
                 display: none;
                 /* margin-left: 15px;
                 width: fit-content; */
@@ -68,7 +68,7 @@
                 width: -webkit-fill-available;
             }
 
-            .headerStart {
+            .headerLeft {
                 margin-right: 10px;
             }
 
@@ -95,17 +95,17 @@
 <body>
     <div class="header" id="headerBar">
             
-        <div class="headerStart">
+        <div class="headerLeft">
             <img class="menuIcon" src="images/menu-bar.svg" id="menuBtn" onclick="showMenu()">
             <img class="logoIcon" src="images/header-logo.svg">
         </div>
 
-        <div class="headerSearch">
+        <div class="headerMid">
             <img class="searchIcon" src="images/search-icon.svg">
             <input type="search" class="form-control rounded" placeholder="Search"/>
         </div>
 
-        <div class="headerEnd">
+        <div class="headerRight">
             
                 <img class="notificationIcon" src="images/notification-icon.svg">
                 <img class="profile" src="images/profile.png">
@@ -118,7 +118,7 @@
 
     <div class="analysis">
 
-        <div class="sideNav" id="sideNavMenu">
+        <div class="sideMenu" id="sideBar">
 
             <!-- <img class="logoIcon img-fluid" src="images/header-logo.svg"> -->
             
@@ -192,7 +192,7 @@
             <p class="analysisTitle">Analysis</p>
 
             <div class="mainForm">
-                <p class="titles">One Column</p>
+                <p class="title-1">One Column</p>
 
                 <div class="form-group">
                     <div class="col">
@@ -389,23 +389,23 @@
     </div>
 </body>
 <script>
-    const sideNavMenu = document.getElementById("sideNavMenu");
-    console.log(toString(sideNavMenu.style.display));
+    const sideBar = document.getElementById("sideBar");
+    console.log(toString(sideBar.style.display));
 
     function showMenu() {
-        if (window.getComputedStyle(sideNavMenu).display === 'none') {
-            sideNavMenu.style.display = "block";
-            sideNavMenu.style.position = "absolute"
+        if (window.getComputedStyle(sideBar).display === 'none') {
+            sideBar.style.display = "block";
+            sideBar.style.position = "absolute"
             if (parseInt(window.innerWidth) <= 500) {
-                sideNavMenu.style.minHeight = "fit-content";
+                sideBar.style.minHeight = "fit-content";
                 document.body.style.overflow = "hidden";
             }
             else {
-                sideNavMenu.style.minHeight = "100vh";
+                sideBar.style.minHeight = "100vh";
             }
         }
         else {
-            sideNavMenu.style.display = "none";
+            sideBar.style.display = "none";
             document.body.style.overflow = "auto";
         }
     }
