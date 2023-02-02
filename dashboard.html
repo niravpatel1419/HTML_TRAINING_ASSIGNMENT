@@ -57,7 +57,7 @@
                 .profileName{
                     display: none;
                 }
-                .headerEnd{
+                .headerRight{
                     display: none;
                     /* margin-left: 15px;
                     width: fit-content; */
@@ -82,7 +82,7 @@
                 .sideNav{
                     width: -webkit-fill-available;
                 }
-                .headerStart{
+                .headerLeft{
                     margin-right: 10px;
                 }
                 .logoIcon{
@@ -114,17 +114,17 @@
 
         <div class="header" id="headerBar">
             
-            <div class="headerStart">
+            <div class="headerLeft">
                 <img class="menuIcon" src="images/menu-bar.svg" id="menuBtn" onclick="showMenu()">
                 <img class="logoIcon" src="images/header-logo.svg">
             </div>
 
-            <div class="headerSearch">
+            <div class="headerMid">
                 <img class="searchIcon" src="images/search-icon.svg">
                 <input type="search" class="form-control rounded" placeholder="Search"/>
             </div>
 
-            <div class="headerEnd">
+            <div class="headerRight">
                 <!-- <div class="header-end-1"> -->
                     <img class="notificationIcon" src="images/notification-icon.svg">
                 <!-- </div> -->
@@ -137,9 +137,9 @@
 
         </div>
 
-        <div class="dashboard" id="dashboard">
+        <div class="mainDash" id="dashboard">
 
-            <div class="sideNav" id="sideNavMenu">
+            <div class="sideMenu" id="sideBar">
 
                 <!-- <img class="logoIcon img-fluid" src="images/header-logo.svg"> -->
                 
@@ -209,11 +209,11 @@
 
             </div>
 
-            <div class="dashboardBody" id="dashboardBody">
+            <div class="dashBody" id="dashboardBody">
 
-                <p class="dashboardTitle">Dashboard</p>                
+                <p class="dashTitle">Dashboard</p>                
 
-                <div class="dashCards">
+                <div class="infoCards">
 
                     <div class="cardItem">
                         <img src="images/star.svg">
@@ -257,12 +257,12 @@
 
                 </div>
 
-                <div class="charts">
+                <div class="chart">
 
                     <div class="graph">
                         <div class="graphHeader">
                             <p class="graphTitle">Sales</p>
-                            <div class="graphTabs">
+                            <div class="graphInfo">
                                 <p>Weekly</p>
                                 <p>Monthly</p>
                                 <p>Yearly</p>
@@ -273,7 +273,7 @@
 
                     <div class="pieChart">
 
-                        <p class="pieChartHeader">Sales by Country</p>
+                        <p class="pieHeader">Sales by Country</p>
 
                         <div class="pieChartImg">
                             <img class="img-fluid" src="images/pie-chart.svg">
@@ -281,15 +281,15 @@
 
                         <div class="pieSubTitle">
 
-                            <div class="columns">
-                                <div class="pieSubTtlColumn">
+                            <div class="column">
+                                <div class="pieTtlColumn">
 
-                                    <div class="rowCountry">
+                                    <div class="country">
                                         <div class="countryColor" style="background-color: #C8242F;"></div>
                                         <p class="countryName">United States of America</p>
                                     </div>
 
-                                    <div class="rowCountry">
+                                    <div class="country">
                                         <div class="countryColor" style="background-color: #F16C20;"></div>
                                         <p class="countryName">Russia</p>
                                     </div>
@@ -300,12 +300,12 @@
                             <div class="columns">
                                 <div class="pieSubTtlColumn">
                                     
-                                    <div class="rowCountry">
+                                    <div class="country">
                                         <div class="countryColor" style="background-color: #A2B86C;"></div>
                                         <p class="countryName">Canada</p>
                                     </div>
 
-                                    <div class="rowCountry">
+                                    <div class="country">
                                         <div class="countryColor" style="background-color: #EBC844;"></div>
                                         <p class="countryName">India</p>
                                     </div>
@@ -319,9 +319,9 @@
 
                 </div>
 
-                <div class="invoiceDiv">
+                <div class="invoiceMainDiv">
                     <div class="invoice">
-                        <p class="invoiceTitle">Invoice</p>
+                        <p class="invoiceTtl">Invoice</p>
                         <div class="table-wrapper">
                             <table class="table">
                                 <thead>
@@ -340,7 +340,7 @@
                                     <td>Public Adjusting Firm</td>
                                     <td>georgia.young@example.com</td>
                                     <td>24 May, 2020</td>
-                                    <td><div class="statusBtnPaid">Paid</td></div>
+                                    <td><div class="btnPaid">Paid</td></div>
                                     <td>$47,800</td>
                                 </tr>
                                 <tr>
@@ -348,7 +348,7 @@
                                     <td>Others</td>
                                     <td>jessica.hanson@example.com</td>
                                     <td>24 May, 2020</td>
-                                    <td><div class="statusBtnPaid">Paid</td></div>
+                                    <td><div class="btnPaid">Paid</td></div>
                                     <td>$98,000</td>
                                 </tr>
                                 <tr>
@@ -356,7 +356,7 @@
                                     <td>Vendor</td>
                                     <td>alma.lawson@example.com/td>
                                     <td>8 Sep, 2020</td>
-                                    <td><div class="statusBtnPaid">Paid</td></div>
+                                    <td><div class="btnPaid">Paid</td></div>
                                     <td>$20,900</td>
                                 </tr>
                                 <tr>
@@ -364,7 +364,7 @@
                                     <td>Property Management Company</td>
                                     <td>kenzi.lawson@example.com</td>
                                     <td>22 Oct, 2020</td>
-                                    <td><div class="statusBtnPaid">Paid</td></div>
+                                    <td><div class="btnPaid">Paid</td></div>
                                     <td>$10,570</td>
                                 </tr>
                                 <tr>
@@ -372,7 +372,7 @@
                                     <td>Subcontractor Company</td>
                                     <td>jackson.graham@example.com</td>
                                     <td>1 Feb, 2020</td>
-                                    <td><div class="statusBtnFailed">Failed</td></div>
+                                    <td><div class="btnFailed">Failed</td></div>
                                     <td>$10,200</td>
                                 </tr>
                                 <tr>
@@ -380,7 +380,7 @@
                                     <td>Mortgage Company</td>
                                     <td>felicia.reid@example.com</td>
                                     <td>22 Oct, 2020</td>
-                                    <td><div class="statusBtnPending">Pending</td></div>
+                                    <td><div class="btnPending">Pending</td></div>
                                     <td>$12,600</td>
                                 </tr>
                                 <tr>
@@ -388,7 +388,7 @@
                                     <td>TPA</td>
                                     <td>dolores.chambers@example.com</td>
                                     <td>21 Sep, 2020</td>
-                                    <td><div class="statusBtnPaid">Paid</td></div>
+                                    <td><div class="btnPaid">Paid</td></div>
                                     <td>$11,170</td>
                                 </tr>
                                 <tr>
@@ -396,7 +396,7 @@
                                     <td>Fire Department</td>
                                     <td>nevaeh.simmons@example.com</td>
                                     <td>17 Oct, 2020</td>
-                                    <td><div class="statusBtnFailed">Failed</td></div>
+                                    <td><div class="btnFailed">Failed</td></div>
                                     <td>$28,000</td>
                                 </tr>
                                 <tr>
@@ -404,7 +404,7 @@
                                     <td>Insurance Carrier</td>
                                     <td>curtis.weaver@example.com</td>
                                     <td>21 Sep, 2020</td>
-                                    <td><div class="statusBtnPaid">Paid</td></div>
+                                    <td><div class="btnPaid">Paid</td></div>
                                     <td>$10,000</td>
                                 </tr>
                                 </tbody>
@@ -423,23 +423,23 @@
 
 <script>
 
-    const sideNavMenu = document.getElementById("sideNavMenu");
-    console.log(toString(sideNavMenu.style.display));
+    const sideBar = document.getElementById("sideBar");
+    console.log(toString(sideBar.style.display));
 
     function showMenu(){
-        if(window.getComputedStyle(sideNavMenu).display === 'none'){
-            sideNavMenu.style.display = "block";
-            sideNavMenu.style.position = "absolute"
+        if(window.getComputedStyle(sideBar).display === 'none'){
+            sideBar.style.display = "block";
+            sideBar.style.position = "absolute"
             if(parseInt(window.innerWidth) <= 500){
-                sideNavMenu.style.minHeight = "fit-content";
+                sideBar.style.minHeight = "fit-content";
                 document.body.style.overflow = "hidden";
             }
             else{
-                sideNavMenu.style.minHeight = "100vh";
+                sideBar.style.minHeight = "100vh";
             }
         }   
         else{
-            sideNavMenu.style.display = "none";
+            sideBar.style.display = "none";
             document.body.style.overflow = "auto";
         }
     }
